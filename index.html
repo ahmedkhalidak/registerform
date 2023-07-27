@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="crud">
+      <div class="head">
+        <h2>register</h2>
+        <p>form</p>
+      </div>
+      <div class="inputs">
+        <label for="name1">Name:</label>
+        <input
+          placeholder="Enter Your Name"
+          type="text"
+          id="name1"
+          pattern="[A-Za-z]+"
+          required
+        />
+        <br />
+        <label for="age">Age:</label>
+        <input placeholder="Enter Your Age" type="number" id="age" required />
+        <label for="courses">Courses:</label>
+        <select id="courses" multiple required>
+          <option value="">Select a programming language</option>
+          <option value="Python">Python</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Java">Java</option>
+          <option value="C++">C++</option>
+          <option value="Ruby">Ruby</option>
+        </select>
+        <br /><br />
+        <button id="add">add</button>
+        <button onclick="deleteLastData()" class="btn btn-danger" id="delete">
+          Delete Last
+        </button>
+      </div>
+      <div class="outputs">
+        <div class="search">
+          <div class="text">
+            <h3>Table Data</h3>
+          </div>
+          <label for="search">search</label>
+          <input onkeyup="searchdata(this.value)" type="search" name="" id="" />
+        </div>
+        <div id="deleteall"></div>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Courses</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

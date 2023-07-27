@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.red-background {
+    background-color: #e20c0c;
+  }
+  
+.crud{
+    width: 60%;
+    margin: auto;
+
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px ;
+    color: #fff;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #121111;
+    border-radius: 3px;
+    background-color: #090909;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  select:focus {
+    outline: none;
+    border-color: #6a9ef9;
+    box-shadow: 0 0 5px #6a9ef9;
+  }
+
+
+  select::-ms-expand {
+    display: none;
+  }
+
+
+  option {
+    background-color: #070606;
+    color: #ebe5e5;
+  }
+
+  
+  option:hover {
+    background-color: #6a9ef9;
+    color: #fff;
+  }
+input:focus{
+    background:#000 ;
+    transform: scale(1.1);
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: rgb(62, 1, 62);
+    color: #fff;
+    border-radius: 20px;
+    margin: 4px 0;
+    font-size: 20px;
+}
+#add ,#delete{
+    width:100%;
+}
+button:hover{
+    background: rgb(143, 4, 143);
+}
+.text h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+}
+label{
+    font-size: large;
+}
+#deleteall{
+    margin: 20px 0;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+th,td{
+    padding: 5px;
+}
